@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张瀚文的个人网页</title>
+    <style>
+        /* 字体和全局样式 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f0f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* 头部样式 */
+        header {
+            background: linear-gradient(to right, #007BFF, #0056b3);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 导航样式 */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* 内容部分样式 */
+        section {
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* 各类信息板块样式 */
+        .project, .education, .honor, .skill, .faq {
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .project:hover, .education:hover, .honor:hover, .skill:hover, .faq:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 社交媒体链接样式 */
+        .social-media {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .social-media a {
+            margin: 0 10px;
+            color: #0056b3;
+            text-decoration: none;
+            font-size: 28px;
+            transition: color 0.3s;
+        }
+        
+        .social-media a:hover {
+            color: #ffdd57;
+        }
+
+        /* 对话窗口样式 */
+        #chat-widget {
+            position: fixed;
+            bottom: 90px;
+            right: 30px;
+            background-color: #0056b3;
+            color: white;
+            border-radius: 50px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #chat-widget:hover {
+            background-color: #004494;
+            transform: scale(1.1);
+        }
+
+        /* 个人照片样式 */
+        .profile-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-image img {
+            width: 180px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 各个板块标题样式 */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #0056b3;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* FAQ 样式 */
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .faq-item:hover {
+            color: #007BFF;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>张瀚文的个人网页</h1>
+        <p>欢迎来到我的个人网页！</p>
+    </header>
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#education">教育经历</a>
+        <a href="#projects">校园经历</a>
+        <a href="#honor">获得荣誉</a>
+        <a href="#skill">技能证书</a>
+        <a href="#faq">常见问题</a>
+        <a href="#contact">联系方式</a>
+    </nav>
+    <section id="about" class="container">
+        <h2>关于我</h2>
+        <div class="profile-image">
+            <img src="zhw1.jpg" alt="张瀚文的照片">
+        </div>
+        <p>张瀚文，出生于2004年5月8日，汉族，共青团员。</p>
+        <p>我是延边大学地理科学本科在读生，GPA为4.21，目前排名第一。</p>
+    </section>
+    <section id="education" class="container">
+        <h2>教育经历</h2>
+        <div class="education">
+            <h3>延边大学</h3>
+            <p>专业：地理科学</p>
+            <p>时间：2023年9月 - 2027年6月</p>
+            <p>GPA: 4.21（排名第一）</p>
+        </div>
+    </section>
+    <section id="projects" class="container">
+        <h2>校园经历</h2>
+        <div class="project">
+            <h3>实践委员</h3>
+            <p>2023级地理科学类1、2班</p>
+            <p>2023年10月 - 2024年10月</p>
+        </div>
+        <div class="project">
+            <h3>实践部工作人员</h3>
+            <p>共青团延边大学地理与海洋科学学院委员会</p>
+            <p>2023年10月 - 2024年10月</p>
+        </div>
+        <div class="project">
+            <h3>志愿者活动</h3>
+            <p>“传承优秀文化，赓续中华文脉”全国大学生2024年寒假“返家乡”社会实践一起云支教专项活动志愿者</p>
+            <p>延边大学“学伴+”重点学生群体网络学业互助计划(第十期)志愿者</p>
+            <p>延边大学五一假期文旅志愿者</p>
+            <p>“中国历代绘画大系”宣讲志愿者</p>
+            <p>“三下乡”社会实践“跟着总书记脚步看吉林”吉林专项实践团队成员</p>
+            <p>活动时间：2024年1月 - 2024年7月</p>
+        </div>
+    </section>
+    <section id="honor" class="container">
+        <h2>获得荣誉</h2>
+        <div class="honor">
+            <p>2023年12月获得延边大学地理与海洋科学学院“体育风尚奖”</p>
+            <p>2024年4月获得延边大学地理与海洋科学学院“以辩明思，论以求真”辩论比赛活动“最佳辩手”</p>
+            <p>2024年5月获得“优秀共青团员”称号</p>
+            <p>2024年6月获得第七届吉林省大学生网络文化节二等奖</p>
+        </div>
+    </section>
+    <section id="skill" class="container">
+        <h2>技能证书</h2>
+        <div class="skill">
+            <p>国家普通话水平测试等级证书 - 2023年12月</p>
+            <p>全国大学英语四级考试证书CET-4 - 2024年2月</p>
+        </div>
+    </section>
+    <section id="faq" class="container">
+        <h2>常见问题</h2>
+        <div class="faq">
+            <div class="faq-item" onclick="toggleAnswer(0)">
+                <h3>Q1: 我如何联系张瀚文？</h3>
+                <div class="faq-answer">
+                    <p>您可以通过电话：199-7591-2758 或邮箱：3092953996@qq.com 联系我。</p>
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(1)">
+                <h3>Q2: 张瀚文在学术上有什么成就？</h3>
+                <div class="faq-answer">
+                    <p>我目前在延边大学地理科学专业就读，GPA 4.21，排名第一，并获得了多项荣誉与奖项。</p>
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(2)">
+                <h3>Q3: 张瀚文的专业兴趣是什么？</h3>
+                <div class="faq-answer">
+                    <p>我的专业兴趣主要在于地理科学，并积极参与各种志愿者活动和社会实践以拓展视野。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>联系方式</h2>
+        <p>电话: 199-7591-2758</p>
+        <p>邮箱: 3092953996@qq.com</p>
+        <div class="social-media">
+            <a href="https://weibo.com" target="_blank">微博</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.github.com" target="_blank">GitHub</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 张瀚文的个人网页. 保留所有权利.</p>
+    </footer>
+    <div id="chat-widget">
+        聊天
+    </div>
+
+    <script>
+        // FAQ 交互逻辑
+        function toggleAnswer(index) {
+            const answers = document.querySelectorAll('.faq-answer');
+            const currentAnswer = answers[index];
+            const isVisible = currentAnswer.style.display === 'block';
+            // 折叠所有答案
+            answers.forEach(answer => answer.style.display = 'none');
+            // 如果当前未显示，则显示
+            if (!isVisible) {
+                currentAnswer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
